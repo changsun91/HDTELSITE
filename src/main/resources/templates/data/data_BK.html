@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="jeongyoojin">
+    <meta name="title" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="../img/hdtelecom_thumb.png">
+
+    <title>HDTTELECOM</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <!--ICON FONT-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrap">
+    <div id="header" class="fixed-header">
+        <div class="gnb-overlay-bg"></div>
+        <div id="headerInnerWrap">
+            <!-- ****************** HEADER TOP ********************** -->
+            <div id="headerInner" class="clearfix">
+                <h1 class="logo"><a href="/" title="메인으로">HDTelecom</a></h1>
+                <div class="header-util-box">
+                    <!-- 외국어선택 -->
+                    <div class="header-lang">
+                        <a href="#" class="active">KOR</a>
+                        <a href="#">ENG</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ****************** GNB ********************** -->
+            <!-- GNB PC ( Less than 4 menus ) -->
+            <nav id="gnb" class="each-menu">
+                <ul class="clearfix">
+                    <li>
+                        <a href="/company_intro">회사소개</a>
+                        <div class="gnb-2dep">
+                            <ul>
+                                <li><a href="/company_intro"><span>인사말</span></a></li>
+                                <li><a href="company_summary.html"><span>개요</span></a></li>
+                                <!--<li><a href="company_history.html"><span>연혁</span></a></li>-->
+                                <li><a href="company_org.html"><span>조직도</span></a></li>
+                                <li><a href="company_talent/1.html"><span>인재상</span></a></li>
+                                <li><a href="company_ipr.html"><span>지적재산권</span></a></li>
+                                <li><a href="company_map.html"><span>오시는 길</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="pro_ott_wilfon_neo.html">Product</a>
+                        <div class="gnb-2dep">
+                            <ul>
+                                <li><a href="pro_ott_wilfon_neo.html"><span>OTT Box</span></a></li>
+                                <li><a href="/pro_720homecctv"><span>720 Home cctv</span></a></li>
+                                <li><a href="/pro_disital_board"><span>Disital Board</span></a></li>
+                                <li><a href="pro_transparent_screen.html"><span>투명스크린</span></a></li>
+                                <!--<li><a href="pro_voipphone.html"><span>VoIP phone</span></a></li>-->
+                                <!--<li><a href="pro_vboard.html"><span>V BOARD</span></a></li>-->
+                                <!--<li><a href="pro_digitalboard.html"><span>Digital Board</span></a></li>-->
+                                <!--<li><a href="pro_rfspeaker.html"><span>RF Speaker</span></a></li>
+                                <li><a href="pro_4kencoder.html"><span>4K Encoder</span></a></li>
+                                <li><a href="pro_ipgateway.html"><span>IP Gateway</span></a></li>
+                                <li><a href="pro_rfmic.html"><span>RF MIC</span></a></li>-->
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/sol_iptv">Solution</a>
+                        <div class="gnb-2dep">
+                            <ul>
+                                <li><a href="/sol_iptv"><span>IPTV</span></a></li>
+                                <li><a href="/sol_appstore"><span>APP Store</span></a></li>
+                                <li><a href="/sol_karaoke"><span>Karaoke</span></a></li>
+                                <li><a href="/sol_rtc"><span>Web RTC</span></a></li>
+                                <li><a href="/sol_ai"><span>AI System</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/data/1">자료실</a>
+                        <div class="gnb-2dep">
+                            <ul>
+                                <li><a href="/data/1"><span>다운로드</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/contact">고객센터</a>
+                        <div class="gnb-2dep">
+                            <ul>
+                                <li><a href="/contact"><span>문의하기</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- GNB Mobile -->
+        <button class="nav-open-btn">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </button>
+        <div class="gnb-overlay-bg-m"></div>
+        <nav id="gnbM">
+            <ul id="navigation">
+                <li>
+                    <a href="/">회사소개</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/company_intro"><span>인사말</span></a></li>
+                        <li><a href="company_summary.html"><span>개요</span></a></li>
+                        <!--<li><a href="company_history.html"><span>연혁</span></a></li>-->
+                        <li><a href="company_org.html"><span>조직도</span></a></li>
+                        <li><a href="company_talent/1.html"><span>인재상</span></a></li>
+                        <li><a href="company_ipr.html"><span>지적재산권</span></a></li>
+                        <li><a href="company_map.html"><span>오시는 길</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="pro_ott_wilfon_neo.html">Product</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="pro_ott_wilfon_neo.html"><span>OTT Box</span></a></li>
+                        <li><a href="/pro_720homecctv"><span>720 Home cctv</span></a></li>
+                        <li><a href="/pro_disital_board"><span>Disital Board</span></a></li>
+                        <li><a href="pro_transparent_screen.html"><span>투명스크린</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Solution</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/sol_iptv"><span>IPTV</span></a></li>
+                        <li><a href="/sol_appstore"><span>APP Store</span></a></li>
+                        <li><a href="/sol_karaoke"><span>Karaoke</span></a></li>
+                        <li><a href="/sol_rtc"><span>Web RTC</span></a></li>
+                        <li><a href="/sol_ai"><span>AI System</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/data/1">자료실</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/data/1"><span>다운로드</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/contact">고객센터</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/contact"><span>문의하기</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- //header -->
+
+    <div class="banner">
+        <div class="banner-img"></div>
+        <h1>다운로드</h1>
+    </div>
+
+    <div class="sub-nav">
+        <div class="container">
+            <ul>
+                <li class="active"><a href="/contact">다운로드</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contents">
+        <div class="container">
+            <h2 class="mb4">자료 다운로드</h2>
+            <p></p>
+
+            <div class="hdt-tb text-center">
+                <table class="table table-hover ">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">제목</th>
+                        <th scope="col" style="width: 10%;">분류</th>
+                        <th scope="col" style="width: 15%;">등록일</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+<!--                     <div class=" t-row" th:each="noticeResult,index:${notice.info}" th:object="${noticeResult}"> -->
+<!--                     <div class=" t-cell no" th:text="${notice.total} - ((${notice.page} - 1) * 20) - ${index.index}"></div> -->
+<!--                     <div class=" t-cell title" ><a th:href="@{'/notice/view/' + ${noticeResult.ntCode} + '/' + ${notice.search.sortType} + '/' + ${notice.page}}" th:text="${noticeResult.ntSubject}"></a></div> -->
+<!--                     <div class=" t-cell writer" th:text="${noticeResult.ntHits}"></div> -->
+<!--                     <div class=" t-cell date data-item" th:attr="data-date=${noticeResult.ntDate}"></div> -->
+<!--                 </div> -->
+                    <tr th:each="noticeResult,index:${notice.info}" th:object="${noticeResult}">
+                        <td th:text="${notice.total} - ((${notice.page} - 1) * 10) - ${index.index}" scope="row"></td>
+<!--                         <td><a th:href="@{'/notice/view/' + ${noticeResult.ntCode} + '/' + ${notice.page}}" th:text="${noticeResult.ntSubject}"></a></td> -->
+						<td><a th:href="@{'/notice/view/' + ${noticeResult.ntCode}}" th:text="${noticeResult.ntSubject}"></a></td>
+                        <td th:if="${noticeResult.ntState.toString()} == 'normal'" th:text="일반"></td>
+                        <td th:if="${noticeResult.ntState.toString()} == 'operation'" th:text="운영"></td>
+                        <td th:if="${noticeResult.ntState.toString()} == 'document'" th:text="문서"></td>
+<!--                         <td th:text="${noticeResult.ntState}"></td> -->
+                        <td class="date data-item" th:attr="data-date=${noticeResult.ntDate}"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="clearfix mt2 data-btn-group">
+                <!--<div class="left">
+                    <button type="button" class="btn btn-hdo"><a href="#">버튼</a></button>
+                </div>-->
+                <div class="right">
+                    <button type="button" class="btn btn-hdb"><a href="data_write.html">글쓰기</a></button>
+                </div>
+            </div>
+
+<!--             <div class="d-flex justify-content-center mt2"> -->
+<!--                 <nav aria-label="" class=""> -->
+<!--                     <ul class="pagination"> -->
+<!--                         <li class="page-item disabled"> -->
+<!--                             <a class="page-link" href="#"> < </a> -->
+<!--                         </li> -->
+<!--                         <li class="page-item active"> -->
+<!--                             <a class="page-link" href="#">1</a> -->
+<!--                         </li> -->
+<!--                         <li class="page-item"> -->
+<!--                             <a class="page-link" href="#">2</a> -->
+<!--                         </li> -->
+<!--                         <li class="page-item"> -->
+<!--                             <a class="page-link" href="#">3</a> -->
+<!--                         </li> -->
+<!--                         <li class="page-item"> -->
+<!--                             <a class="page-link" href="#"> > </a> -->
+<!--                         </li> -->
+<!--                     </ul> -->
+<!--                 </nav> -->
+<!--             </div> -->
+			<div class="d-flex justify-content-center mt2 pagination-list-wrap" th:attr="data-page=${notice.page},data-total=${notice.total}">
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-2">
+
+                </div>
+                <div class="col-12 col-md-10">
+                    <p class="">서울특별시 구로구 디지털로31길 41 이앤씨벤처드림타워6차 708호</p>
+                    <p>대표자: 이희대 | 사업자등록번호: 220-88-30372 | 전화: 070-7416-7890 | 팩스: 02-6008-8107 | help@hdtel.biz</p>
+                    <small>Copyright ⓒ hdtelecom Corp. All rights reserved.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a id="scroll-top-btn" href="#"></a>
+
+
+<!--script-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="../js/nav.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+<script type="text/javascript" src="../js/jquery.pagination.js"></script>
+<script src="plugins/jQuery/jQuery-2.1.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script>
+$(document).ready(function(){
+    for(var i=0; i<$('.data-item').length; i++){
+        $('.data-item').eq(i).text(moment.utc($('.data-item').eq(i).attr('data-date')).local().format().substr(0, 10));
+    }
+    
+
+    $(".pagination-list-wrap").pagination({
+        pageIndex: parseInt($('.pagination-list-wrap').attr('data-page') - 1),
+        pageSize:10,
+        total: $('.pagination-list-wrap').attr('data-total'),
+        debug: false,
+        loadFirstPage: true
+    });
+
+    $(".pagination-list-wrap").on("pageClicked", function (e, data) {
+        // 정렬 타입
+//         var sortTypeValue = $("select[name=faqSort]").val();
+//         var sortType = null;
+//         switch (sortTypeValue) {
+//             case "sort-recent" :
+//                 sortType = "recent";
+//                 break;
+//             case "sort-oldest" :
+//                 sortType = "oldest";
+//                 break;
+//         }
+        // 페이지
+        page = parseInt(data.pageIndex + 1);
+
+        window.location.href = '/data'+ '/' + page;
+    });
+});
+</script>
+</body>
+</html>

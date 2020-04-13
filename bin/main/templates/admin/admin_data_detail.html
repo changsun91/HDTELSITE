@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="jeongyoojin">
+    <meta name="title" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="img/hdtelecom_thumb.png">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+
+    <title>HDTTELECOM</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+
+    <!--ICON FONT-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrap">
+    <div id="header" class="fixed-header">
+        <div class="gnb-overlay-bg"></div>
+        <div id="headerInnerWrap">
+            <!-- ****************** HEADER TOP ********************** -->
+            <div id="headerInner" class="clearfix">
+                <h1 class="logo"><a href="/" title="메인으로">HDTelecom</a></h1>
+                <div class="header-util-box">
+                    <!-- Language -->
+                    <div class="header-lang">
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <i class="material-icons"></i>
+                                <a href="#">KOREAN</a>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="eng/">ENGLISH</a>
+                                <a href="jp/">JAPAN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ****************** GNB ********************** -->
+            <!-- GNB PC ( Less than 4 menus ) -->
+            <nav id="gnb" class="each-menu">
+                <ul class="clearfix">
+                    <li>
+                        <a href="/admindata/1">게시판</a>
+                        <ul class="gnb-2dep">
+                            <li><a href="/admindata/1"><span>자료실</span></a></li>
+                            <li><a href="/admintalent/1"><span>인재상</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/admincontact/1">문의하기</a>
+                        <ul class="gnb-2dep">
+                            <li><a href="/admincontact/1"><span>문의하기</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div id="gnbPcBg" class=""></div>
+        </div>
+        <!-- GNB Mobile -->
+        <button class="nav-open-btn">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </button>
+        <div class="gnb-overlay-bg-m"></div>
+        <nav id="gnbM">
+            <ul id="navigation">
+                <li>
+                    <a href="/">회사소개</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/company_intro"><span>CEO 인사말</span></a></li>
+                        <li><a href="/company_summary"><span>비전</span></a></li>
+                        <li><a href="/company_org"><span>조직도</span></a></li>
+                        <li><a href="/company_talent/1"><span>인재채용</span></a></li>
+                        <li><a href="/company_ipr"><span>지적재산권</span></a></li>
+                        <li><a href="/company_map"><span>오시는 길</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/pro_ott_box">제품소개</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/pro_ott_box"><span>OTT Box</span></a></li>
+                        <li><a href="/pro_720homecctv"><span>720 Home CCTV</span></a></li>
+                        <li><a href="/pro_disital_board"><span>Disital Board</span></a></li>
+                        <!--<li><a href="pro_transparent_screen.html"><span>Transparent Screen</span></a></li>-->
+                    </ul>
+                </li>
+                <li>
+                    <a href="/sol_iptv">서비스소개</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/sol_iptv"><span>IPTV</span></a></li>
+                        <li><a href="/sol_appstore"><span>APP Store</span></a></li>
+                        <li><a href="/sol_karaoke"><span>Karaoke</span></a></li>
+                        <li><a href="/sol_rtc"><span>Web RTC</span></a></li>
+                        <li><a href="/sol_ai"><span>AI System</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/data/1">자료실</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/data/1"><span>자료실</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/contact">고객센터</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/contact"><span>문의하기</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- //header -->
+
+    <div class="banner">
+        <div class="banner-img data-banner"></div>
+        <h1>자료실</h1>
+        <p>Download</p>
+    </div>
+
+    <div class="sub-nav d-none">
+        <div class="container">
+            <ul>
+                <li class="active"><a href="/contact">자료실</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contents">
+        <div class="container">
+            <h2 class="mb4">자료 다운로드</h2>
+            <p></p>
+			<form name="addDetail" id="addDetail" method="post" action="/data/update">
+            <div class="form-detail-head">
+                <dl class="ddh-tit row no-gutters">
+                    <dt class="form-group col-12 col-md-2 m-0">
+                        <select class="form-control" id="ntState" name="ntState">
+                        <option value="normal" th:selected="${noticeDetail.ntState.toString() == 'normal'}">일반</option>
+                        <option value="document" th:selected="${noticeDetail.ntState.toString() == 'document'}">서류</option>
+                        <option value="operation" th:selected="${noticeDetail.ntState.toString() == 'operation'}">공지</option>
+                        </select>
+                    </dt>
+                    <dd class="form-group col-12 col-md-10 m-0">
+                        <input id="ntSubject" name="ntSubject" type="text" class="form-control" th:value="${noticeDetail.ntSubject}">
+                    </dd>
+                </dl>
+                <input type="hidden" id="ntRoute" name="ntRoute" value="">
+                <input type="hidden" id="ntFilename" name="ntFilename" value="">
+                <input type="hidden" id="ntCode" name="ntCode" th:value="${noticeDetail.ntCode}">
+                <input type="hidden" id="newFileChk" name="newFileChk" value="N">
+<!--                 <a href="../noticeFile/ffc7e043-1785-438c-bd1c-3150bed841ae_3.jpg" id="menu_manage" download>매뉴얼</a>  -->
+<!-- <a href="https://hdt.willfonk.com/hdt/noticeFile/ffc7e043-1785-438c-bd1c-3150bed841ae_3.jpg" id="menu_manage" download>매뉴얼</a> -->
+<!-- <a th:href="@{https://hdt.willfonk.com/hdt/noticeFile/{route}(route=${route})}" id="menu_manage" download>매뉴얼</a> -->
+            </div>
+
+            <div class="form-detail-contents form-group">
+                <textarea id="ntMessage" name="ntMessage" class="form-control" rows="11" th:field="${noticeDetail.ntMessage}"></textarea>
+            </div>
+			</form>
+            <!-- 0402추가 / 파일 업로드 영역 추가 -->
+            <form id="uploadFileForm" name="uploadFileForm" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+            <div class="form-file">
+                <div class="form-group-file clearfix">
+                    <input id="fileNm" name="fileNm" type="text" class="form-control" th:value="${noticeDetail.ntFilename}" placeholder="" disabled>
+                    <input type="file" class="custom-file-input" name="contact-file" id="contact-file" style="width:0%; height:0%;">
+                    <button type="button" class="btn btn-hdo" id="upload_btn" name="upload_btn">파일첨부</button>
+<!--                     <a th:href="@{https://hdt.willfonk.com/hdt/noticeFile/{route}(route=${noticeDetail.ntFilename})}" id="menu_manage" th:text="${noticeDetail.ntFilename}" download></a> -->
+                </div>
+            </div>
+            </form>
+
+            <div class="mt2 mb4 form-btn-group d-flex justify-content-between">
+                <div class="left">
+                    <button type="button" class="btn btn-hdb" data-toggle="modal" data-target="#modal-delete">삭제</button>
+                </div>     
+                <div class="center">
+                    <button type="button" class="btn btn-hdo" id="update_btn">수정</button>
+                </div>
+                <div class="right">
+                    <button type="button" class="btn btn-hdb"><a href="/admindata/1">목록</a></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-2">
+
+                </div>
+                <div class="col-12 col-md-10">
+                    <p class="">서울특별시 구로구 디지털로31길 41 이앤씨벤처드림타워6차 708호</p>
+                    <p>대표자: 이희대 | 사업자등록번호: 220-88-30372 | 전화: 070-7416-7890 | 팩스: 02-6008-8107 | help@hdtel.biz</p>
+                    <small>Copyright ⓒ hdtelecom Corp. All rights reserved.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a id="scroll-top-btn" href="#"></a>
+
+<!-- Modal -->
+<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete-tit" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <!--<h5 class="modal-title" id="modal-delete-tit">삭제</h5>-->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">게시글을 삭제하시겠습니까?</div>
+            </div>
+            <div class="modal-footer border-top-0">
+                <button type="button" class="btn btn-hdo" data-dismiss="modal" id="deleteBtn">삭제</button>
+                <button type="button" class="btn btn-hdb">닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--script-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="../../js/nav.js"></script>
+<script type="text/javascript" src="../../js/mob.js"></script>
+<script type="text/javascript" src="../../js/script.js"></script>
+<script src="http://malsup.github.com/jquery.form.js"></script> 
+<script>
+$("#deleteBtn").click(function(){
+	var ntCode = $("#ntCode").val();
+	
+	location.href = "/notice/delete/"+ntCode+"";
+})
+$("#upload_btn").click(function(){
+	$("#contact-file").trigger('click');
+})
+
+$("#update_btn").click(function(){
+	var fileCheck = document.getElementById("contact-file").value;
+	if(!fileCheck){
+		$("form[name=addDetail]").submit();
+	} else{
+		$("#newFileChk").val("Y");
+		$('#uploadFileForm').ajaxSubmit({
+		    url : '../../upload',
+		    type : 'post',
+		    dataType : 'json',
+		    processData: false,
+		    contentType: false,
+		    cache: false,
+		    success : function(data){
+		    	if(data.result){
+		    		$("#ntFilename").val(data.info[0].name);
+	            	$("#ntRoute").val(data.info[0].url);
+	            	$("form[name=addDetail]").submit();
+		    	} else{
+		    		alert("Message :\n" + data.message);
+	                return false;
+		    	}
+		    },
+		    error : function(request, status, error){
+		        alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+		        return false;
+		    }
+		})
+	}
+
+});
+	
+$(document).on('change', '#contact-file', function(e) {
+	$("#fileNm").val(document.getElementById('contact-file').files[0].name);
+// 	alert(document.getElementById("contact-file").files[0].name);
+	
+	
+});
+</script>
+</body>
+</html>

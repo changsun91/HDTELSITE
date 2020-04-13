@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="jeongyoojin">
+    <meta name="title" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="img/hdtelecom_thumb.png">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+
+    <title>HDTTELECOM</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!--ICON FONT-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrap">
+    <div id="header" class="fixed-header">
+        <div class="gnb-overlay-bg"></div>
+        <div id="headerInnerWrap">
+            <!-- ****************** HEADER TOP ********************** -->
+            <div id="headerInner" class="clearfix">
+                <h1 class="logo"><a href="/" title="메인으로">HDTelecom</a></h1>
+                <div class="header-util-box">
+                    <!-- Language -->
+                    <div class="header-lang">
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <i class="material-icons"></i>
+                                <a href="#">KOREAN</a>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="eng/">ENGLISH</a>
+                                <a href="jp/">JAPAN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ****************** GNB ********************** -->
+            <!-- GNB PC ( Less than 4 menus ) -->
+            <nav id="gnb" class="each-menu">
+                <ul class="clearfix">
+                    <li>
+                        <a href="/company_intro">회사소개</a>
+                        <ul class="gnb-2dep">
+                            <li><a href="/company_intro"><span>CEO 인사말</span></a></li>
+                            <li><a href="/company_summary"><span>비전</span></a></li>
+                            <li><a href="/company_org"><span>조직도</span></a></li>
+                            <li><a href="/company_talent/1"><span>인재채용</span></a></li>
+                            <li><a href="/company_ipr"><span>지적재산권</span></a></li>
+                            <li><a href="/company_map"><span>오시는 길</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/pro_ott_box">제품소개</a>
+                        <ul class="gnb-2dep">
+                            <li><a href="/pro_ott_box"><span>OTT Box</span></a></li>
+                            <li><a href="/pro_720homecctv"><span>720 Home CCTV</span></a></li>
+                            <li><a href="/pro_disital_board"><span>Disital Board</span></a></li>
+                            <!--<li><a href="pro_transparent_screen.html"><span>Transparent Screen</span></a></li>-->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/sol_iptv">서비스소개</a>
+                        <ul class="gnb-2dep">
+                            <li><a href="/sol_iptv"><span>IPTV</span></a></li>
+                            <li><a href="/sol_appstore"><span>APP Store</span></a></li>
+                            <li><a href="/sol_karaoke"><span>Karaoke</span></a></li>
+                            <li><a href="/sol_rtc"><span>Web RTC</span></a></li>
+                            <li><a href="/sol_ai"><span>AI System</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/data/1">자료실</a>
+                        <ul  class="gnb-2dep">
+                            <li><a href="/data/1"><span>자료실</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/contact">고객센터</a>
+                        <ul class="gnb-2dep">
+                            <li><a href="/contact"><span>문의하기</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div id="gnbPcBg" class=""></div>
+        </div>
+        <!-- GNB Mobile -->
+        <button class="nav-open-btn">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </button>
+        <div class="gnb-overlay-bg-m"></div>
+        <nav id="gnbM">
+            <ul id="navigation">
+                <li>
+                    <a href="/">회사소개</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/company_intro"><span>CEO 인사말</span></a></li>
+                        <li><a href="/company_summary"><span>비전</span></a></li>
+                        <li><a href="/company_org"><span>조직도</span></a></li>
+                        <li><a href="/company_talent/1"><span>인재채용</span></a></li>
+                        <li><a href="/company_ipr"><span>지적재산권</span></a></li>
+                        <li><a href="/company_map"><span>오시는 길</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/pro_ott_box">제품소개</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/pro_ott_box"><span>OTT Box</span></a></li>
+                        <li><a href="/pro_720homecctv"><span>720 Home CCTV</span></a></li>
+                        <li><a href="/pro_disital_board"><span>Disital Board</span></a></li>
+                        <!--<li><a href="pro_transparent_screen.html"><span>Transparent Screen</span></a></li>-->
+                    </ul>
+                </li>
+                <li>
+                    <a href="/sol_iptv">서비스소개</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/sol_iptv"><span>IPTV</span></a></li>
+                        <li><a href="/sol_appstore"><span>APP Store</span></a></li>
+                        <li><a href="/sol_karaoke"><span>Karaoke</span></a></li>
+                        <li><a href="/sol_rtc"><span>Web RTC</span></a></li>
+                        <li><a href="/sol_ai"><span>AI System</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/data/1">자료실</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/data/1"><span>자료실</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/contact">고객센터</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/contact"><span>문의하기</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- //header -->
+
+    <div class="banner">
+        <div class="banner-img product-banner"></div>
+        <h1>Disital Board</h1>
+        <p>Product</p>
+    </div>
+
+    <div class="sub-nav">
+        <div class="container">
+            <ul>
+                <li><a href="/pro_ott_box">OTT Box</a></li>
+                <li><a href="/pro_720homecctv">ROUND AI</a></li>
+                <li class="active"><a href="/pro_disital_board">Disital Board</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contents">
+        <div class="container plpr80">
+            <h2 class="mb2">Disital Board</h2>
+
+            <div class="product_img row">
+                <div class="col-12 col-md-4"><img src="img/disital_board01.png" alt="전자칠판" class="img-fluid p-2"></div>
+                <div class="col-12 col-md-4"><img src="img/disital_board02.png" alt="전자칠판" class="img-fluid p-2"></div>
+                <div class="col-12 col-md-4"><img src="img/disital_board03.png" alt="전자칠판 팬슬" class="img-fluid p-2"></div>
+            </div>
+
+            <div class="row disital-b-img">
+                <div class="col-12">
+                    <img src="img/disital_board_img.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <!--<h4 class="mb2">Product Spec</h4>-->
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-2">
+
+                </div>
+                <div class="col-12 col-md-10">
+                    <p class="">서울특별시 구로구 디지털로31길 41 이앤씨벤처드림타워6차 708호</p>
+                    <ul>
+                        <li>대표자: 이희대</li>
+                        <li> | </li>
+                        <li></li>
+                        <li>사업자등록번호: 220-88-30372</li>
+                        <li> | </li>
+                        <li>전화: <a href="tel:070-7416-7890">070-7416-7890</a></li>
+                        <li> | </li>
+                        <li>팩스: 02-6008-8107</li>
+                        <li> | </li>
+                        <li><a href="mailto:help@hdtel.biz">help@hdtel.biz</a></li>
+                    </ul>
+                    <small>Copyright ⓒ hdtelecom Corp. All rights reserved.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a id="scroll-top-btn" href="#"></a>
+
+
+<!--script-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/mob.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+.gnb-overlay-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 97;
+}
+
+/* gnb overlay BG */
+#gnbBg {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 68px;
+    width: 100%;
+    height: 300px;
+    background: #1a60ff;
+    border-bottom: 1px solid #111;
+    z-index: 98
+}
+
+/* gnb 2depth BG */
+#gnb {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+
+#gnb > ul {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+#gnb > ul > li {
+    position: relative;
+    float: left;
+    height: 100px;
+}
+
+#gnb > ul > li > a {
+    position: relative;
+    z-index: 100;
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    width: 170px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    -webkit-transition: font-size 0.4s;
+    -moz-transition: font-size 0.4s;
+    -o-transition: font-size 0.4s;
+    -ms-transition: font-size 0.4s;
+    transition: font-size 0.4s;
+    font-family: 'Godo', 'Noto Sans KR', "나눔고딕",
+    NanumGothic, "Nanum Gothic", "돋움", Dotum, Arial, sans-serif;
+}
+
+#gnb > ul > li:hover {
+    height: auto;
+}
+
+/* GNB :: 2차 각각메뉴 */
+#gnb.each-menu > ul > li .gnb-2dep {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    font-family: 'Noto Sans KR', "나눔고딕",
+    NanumGothic, "Nanum Gothic", "돋움", Dotum, Arial, sans-serif;
+}
+
+#gnb.each-menu > ul > li .gnb-2dep:before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    height: 0;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    /*background: linear-gradient(0deg, rgba(250, 104, 39, 0.9), rgb(253, 139, 85)) no-repeat 0 0;*/
+    background: linear-gradient(0deg, rgb(26, 96, 255), rgb(75, 130, 255)) no-repeat 0 0;
+    /*background: linear-gradient(0deg, rgb(96,53,255), rgb(75, 130, 255)) no-repeat 0 0;*/
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+#gnb > ul > li .gnb-2dep ul {
+    padding: 10px 0 13px;
+}
+
+#gnb > ul > li .gnb-2dep ul li {
+    position: relative;
+    padding: 8px 20px;
+}
+
+#gnb > ul > li .gnb-2dep ul li a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    -webkit-transition: all 0s 0s;
+    -moz-transition: all 0s 0s;
+    -o-transition: all 0s 0s;
+    -ms-transition: all 0s 0s;
+    transition: all 0s 0s
+}
+
+#gnb.each-menu > ul > li:hover .gnb-2dep:before {
+    height: calc(100% + 100px);
+    opacity: 1.0;
+    filter: Alpha(opacity=100);
+}
+
+#gnb.each-menu > ul > li .gnb-2dep.open {
+    visibility: visible;
+    opacity: 1.0;
+    filter: Alpha(opacity=100);
+    color: #ffffff;
+}
+
+#gnb > ul > li .gnb-2dep.open ul li > a {
+    opacity: 1.0;
+    filter: Alpha(opacity=100);
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+#gnb > ul > li .gnb-2dep.open ul li:nth-child(1) > a {
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    -ms-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+#gnb > ul > li .gnb-2dep.open ul li:nth-child(2) > a {
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    -ms-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+#gnb > ul > li .gnb-2dep.open ul li:nth-child(3) > a {
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    -ms-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+#gnb > ul > li .gnb-2dep.open ul li:nth-child(4) > a {
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    -o-transition-delay: 0.4s;
+    -ms-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+#gnb > ul > li .gnb-2dep.open ul li:nth-child(5) > a {
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    -ms-transition-delay: 0.4s;
+    transition-delay: 0.5s;
+}
+
+#gnb > ul > li .gnb-2dep.open ul li:nth-child(6) > a {
+    -webkit-transition-delay: 0.6s;
+    -moz-transition-delay: 0.6s;
+    -o-transition-delay: 0.6s;
+    -ms-transition-delay: 0.4s;
+    transition-delay: 0.6s;
+}
+
+#gnb > ul > li .gnb-2dep.open ul li:nth-child(7) > a {
+    -webkit-transition-delay: 0.7s;
+    -moz-transition-delay: 0.7s;
+    -o-transition-delay: 0.7s;
+    -ms-transition-delay: 0.4s;
+    transition-delay: 0.7s;
+}
+
+#gnb > ul > li .gnb-2dep.open ul li:nth-child(8) > a {
+    -webkit-transition-delay: 0.8s;
+    -moz-transition-delay: 0.8s;
+    -o-transition-delay: 0.8s;
+    -ms-transition-delay: 0.4s;
+    transition-delay: 0.8s;
+}

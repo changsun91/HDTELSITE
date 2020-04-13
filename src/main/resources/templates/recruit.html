@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="jeongyoojin">
+    <meta name="title" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>HDTTELECOM</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!--ICON FONT-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<div id="header" class="fixed-header">
+    <div class="gnb-overlay-bg"></div>
+    <div id="headerInnerWrap">
+        <!-- ****************** HEADER TOP ********************** -->
+        <div id="headerInner" class="clearfix">
+            <h1 class="logo"><a href="/" title="메인으로">HDTelecom</a></h1>
+            <div class="header-util-box">
+                <!-- 외국어선택 -->
+                <div class="header-lang">
+                    <a href="#" class="active">KOR</a>
+                    <a href="#">ENG</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ****************** GNB ********************** -->
+        <!-- GNB PC ( Less than 4 menus ) -->
+        <nav id="gnb" class="each-menu">
+            <ul class="clearfix">
+                <li>
+                    <a href="/company_intro">회사소개</a>
+                    <div class="gnb-2dep">
+                        <ul>
+                            <li><a href="/company_intro"><span>인사말</span></a></li>
+                            <li><a href="/company_summary"><span>개요</span></a></li>
+                            <li><a href="company_history.html"><span>연혁</span></a></li>
+                            <li><a href="/company_org"><span>조직도</span></a></li>
+                            <li><a href="/company_map"><span>오시는 길</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="pro_ott_wilfon_neo.html">Product</a>
+                    <div class="gnb-2dep">
+                        <ul>
+                            <li><a href="pro_ott_wilfon_neo.html"><span>OTT Box</span></a></li>
+                            <li><a href="/pro_720homecctv"><span>720 Home cctv</span></a></li>
+                            <li><a href="pro_transparent_display.html"><span>Disital Board</span></a></li>
+                            <!--<li><a href="pro_voipphone.html"><span>VoIP phone</span></a></li>-->
+                            <!--<li><a href="pro_vboard.html"><span>V BOARD</span></a></li>-->
+                            <!--<li><a href="pro_digitalboard.html"><span>Digital Board</span></a></li>-->
+                            <!--<li><a href="pro_rfspeaker.html"><span>RF Speaker</span></a></li>
+                            <li><a href="pro_4kencoder.html"><span>4K Encoder</span></a></li>
+                            <li><a href="pro_ipgateway.html"><span>IP Gateway</span></a></li>
+                            <li><a href="pro_rfmic.html"><span>RF MIC</span></a></li>-->
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/sol_iptv">Solution</a>
+                    <div class="gnb-2dep">
+                        <ul>
+                            <li><a href="/sol_iptv"><span>IPTV</span></a></li>
+                            <li><a href="/sol_appstore"><span>APP Store</span></a></li>
+                            <li><a href="/sol_karaoke"><span>KARAOKE System</span></a></li>
+                            <li><a href="/sol_rtc"><span>Web RTC</span></a></li>
+                            <li><a href="/sol_ai"><span>AI System</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/data/1">자료실</a>
+                    <div class="gnb-2dep">
+                        <ul>
+                            <li><a href="/data/1"><span>다운로드</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="talent.html">인재채용</a>
+                    <div class="gnb-2dep">
+                        <ul>
+                            <li><a href="talent.html"><span>인재상</span></a></li>
+                            <!--<li><a href="recruit.html"><span>인재채용</span></a></li>-->
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="/contact">고객센터</a>
+                    <div class="gnb-2dep">
+                        <ul>
+                            <li><a href="/contact"><span>문의하기</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- GNB Mobile -->
+    <button class="nav-open-btn">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+    </button>
+    <div class="gnb-overlay-bg-m"></div>
+    <nav id="gnbM">
+        <ul id="navigation">
+            <li>
+                <a href="/">회사소개</a>
+                <ul class="gnb-2dep">
+                    <li><a href="/"><span>개요</span></a></li>
+                    <li><a href="company_history.html"><span>연혁</span></a></li>
+                    <li><a href="/company_org"><span>조직도</span></a></li>
+                    <li><a href="/company_map"><span>오시는 길</span></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="pro_ott_wilfon_neo.html">Product</a>
+                <ul class="gnb-2dep">
+                    <li><a href="pro_ott_wilfon_neo.html"><span>OTT Box</span></a></li>
+                    <li><a href="/pro_720homecctv"><span>720 Home cctv</span></a></li>
+                    <li><a href="pro_transparent_display.html"><span>Disital Board</span></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Solution</a>
+                <ul class="gnb-2dep">
+                    <li><a href="#"><span>IPTV(VISION PH WTV)</span></a></li>
+                    <li><a href="#"><span>APP Store</span></a></li>
+                    <li><a href="#"><span>KARAOKE System</span></a></li>
+                    <li><a href="#"><span>CCTV System</span></a></li>
+                    <li><a href="#"><span>Web RTC</span></a></li>
+                    <li><a href="#"><span>AI System</span></a></li>
+                    <li><a href="#"><span>V BOARD</span></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/data/1">자료실</a>
+                <ul class="gnb-2dep">
+                    <li><a href="/data/1"><span>다운로드</span></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="talent.html">인재채용</a>
+                <ul class="gnb-2dep">
+                    <li><a href="talent.html"><span>인재상</span></a></li>
+                    <!--<li><a href="recruit.html"><span>인재채용</span></a></li>-->
+                </ul>
+            </li>
+            <li>
+                <a href="/contact">고객센터</a>
+                <ul class="gnb-2dep">
+                    <li><a href="/contact"><span>문의하기</span></a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+<!-- //header -->
+
+<div class="banner">
+    <div class="banner-img"></div>
+    <div class="container">
+        <h1>인재채용</h1>
+
+        <div class="page-arrow">
+            <a href="/data/1" class="arrow-prev">
+                <span>자료실</span>
+            </a>
+            <a href="/contact" class="arrow-next">
+                <span>고객센터</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="sub-nav">
+    <div class="container">
+        <ul>
+            <li><a href="talent.html">인재상</a></li>
+            <!--<li class="active"><a href="recruit.html">인재채용</a></li>-->
+        </ul>
+    </div>
+</div>
+
+<div class="contents">
+    <div class="container">
+        <h2 class="mb4">인재채용</h2>
+        <p></p>
+
+        <h4>고객 성공을 위한 전문성으로 나의 성공을 함께 키워갑니다</h4>
+        <br>
+
+        <div class="row clearfix mt2">
+            <div class="col-3 mb2">
+                <a href="#">
+                    <div class="bg-secondary text-white p-4 rounded">
+                        <h5 class="pt4">영업</h5>
+                        <p class="pb4">S/W / VAN / PG</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-3 mb2">
+                <a href="#">
+                    <div class="bg-secondary text-white p-4 rounded">
+                        <h5 class="pt4">IT</h5>
+                        <p class="pb4">기술지원 / 개발</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-3 mb2">
+                <a href="#">
+                    <div class="bg-secondary text-white p-4 rounded">
+                        <h5 class="pt4">기획 & 마케팅</h5>
+                        <p class="pb4">기획 / 마케팅 / 디자인</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-3 mb2">
+                <a href="#">
+                    <div class="bg-secondary text-white p-4 rounded">
+                        <h5 class="pt4">경영지원</h5>
+                        <p class="pb4">재무 / 인사 / 법무 / 사업지원</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+
+        <h4 class="mb4">영업</h4>
+
+        <form>
+            <div class="form-group">
+                <label for="name">이름</label>
+                <input type="email" class="form-control" id="name" aria-describedby="emailHelp" placeholder="name">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="mail">이메일주소</label>
+                <input type="email" class="form-control" id="mail" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <!--국가 추가-->
+                <label for="number">연락처</label>
+                <input type="text" class="form-control" id="number" placeholder="phone number">
+            </div>
+
+            <div class="input-group form-group mb3">
+                <label for="inputGroupFile02" class="d-block clearfix" style="width: 100%;">파일</label>
+                <div class="custom-file clearfix">
+                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                    <label class="custom-file-label rounded" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+                </div>
+                <div class="input-group-append">
+                    <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="form-group">
+                <label for="title">제목</label>
+                <input type="text" class="form-control" id="title" placeholder="title">
+            </div>
+            <div class="form-group">
+                <label for="txtarea">내용</label>
+                <textarea class="form-control" id="txtarea" rows="10"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block rounded">지원하기</button>
+        </form>
+
+        <br>
+        <br>
+        <br>
+    </div>
+</div>
+
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-2">
+
+            </div>
+            <div class="col-12 col-md-10">
+                <p class="">서울특별시 구로구 디지털로31길 41 이앤씨벤처드림타워6차 708호</p>
+                <p>대표자: 이희대 | 사업자등록번호: 220-88-30372 | 전화: 070-7416-7890 | 팩스: 02-6008-8107 | help@hdtel.biz</p>
+                <small>Copyright ⓒ hdtelecom Corp. All rights reserved.</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a id="scroll-top-btn" href="#"></a>
+
+
+<!--script-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

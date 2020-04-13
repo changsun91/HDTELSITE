@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="jeongyoojin">
+    <meta name="title" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="img/hdtelecom_thumb.png">
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+
+    <title>HDTTELECOM</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!--ICON FONT-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body bgproperties="fixed">
+
+<div class="wrap">
+    <div id="header" class="fixed-header">
+        <div class="gnb-overlay-bg"></div>
+        <div id="headerInnerWrap">
+            <!-- ****************** HEADER TOP ********************** -->
+            <div id="headerInner" class="clearfix">
+                <h1 class="logo"><a href="/" title="메인으로">HDTelecom</a></h1>
+                <div class="header-util-box">
+                    <!-- Language -->
+                    <div class="header-lang">
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <i class="material-icons"></i>
+                                <a href="#">KOREAN</a>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="eng/">ENGLISH</a>
+                                <a href="jp/">JAPAN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ****************** GNB ********************** -->
+            <!-- GNB PC ( Less than 4 menus ) -->
+            <nav id="gnb" class="each-menu">
+                <ul class="clearfix">
+                    <li>
+                        <a href="/company_intro">회사소개</a>
+                        <ul class="gnb-2dep">
+                            <li><a href="/company_intro"><span>CEO 인사말</span></a></li>
+                            <li><a href="/company_summary"><span>비전</span></a></li>
+                            <li><a href="/company_org"><span>조직도</span></a></li>
+                            <li><a href="/company_talent/1"><span>인재채용</span></a></li>
+                            <li><a href="/company_ipr"><span>지적재산권</span></a></li>
+                            <li><a href="/company_map"><span>오시는 길</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/pro_ott_box">제품소개</a>
+                        <ul class="gnb-2dep">
+                            <li><a href="/pro_ott_box"><span>OTT Box</span></a></li>
+                            <li><a href="/pro_720homecctv"><span>720 Home CCTV</span></a></li>
+                            <li><a href="/pro_disital_board"><span>Disital Board</span></a></li>
+                            <!--<li><a href="pro_transparent_screen.html"><span>Transparent Screen</span></a></li>-->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/sol_iptv">서비스소개</a>
+                        <ul class="gnb-2dep">
+                            <li><a href="/sol_iptv"><span>IPTV</span></a></li>
+                            <li><a href="/sol_appstore"><span>APP Store</span></a></li>
+                            <li><a href="/sol_karaoke"><span>Karaoke</span></a></li>
+                            <li><a href="/sol_rtc"><span>Web RTC</span></a></li>
+                            <li><a href="/sol_ai"><span>AI System</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/data/1">자료실</a>
+                        <ul  class="gnb-2dep">
+                            <li><a href="/data/1"><span>자료실</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/contact">고객센터</a>
+                       <ul class="gnb-2dep">
+                            <li><a href="/contact"><span>문의하기</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div id="gnbPcBg" class=""></div>
+        </div>
+        <!-- GNB Mobile -->
+        <button class="nav-open-btn">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </button>
+        <div class="gnb-overlay-bg-m"></div>
+        <nav id="gnbM">
+            <ul id="navigation">
+                <li>
+                    <a href="/">회사소개</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/company_intro"><span>CEO 인사말</span></a></li>
+                        <li><a href="/company_summary"><span>비전</span></a></li>
+                        <li><a href="/company_org"><span>조직도</span></a></li>
+                        <li><a href="/company_talent/1"><span>인재채용</span></a></li>
+                        <li><a href="/company_ipr"><span>지적재산권</span></a></li>
+                        <li><a href="/company_map"><span>오시는 길</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/pro_ott_box">제품소개</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/pro_ott_box"><span>OTT Box</span></a></li>
+                        <li><a href="/pro_720homecctv"><span>720 Home CCTV</span></a></li>
+                        <li><a href="/pro_disital_board"><span>Disital Board</span></a></li>
+                        <!--<li><a href="pro_transparent_screen.html"><span>Transparent Screen</span></a></li>-->
+                    </ul>
+                </li>
+                <li>
+                    <a href="/sol_iptv">서비스소개</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/sol_iptv"><span>IPTV</span></a></li>
+                        <li><a href="/sol_appstore"><span>APP Store</span></a></li>
+                        <li><a href="/sol_karaoke"><span>Karaoke</span></a></li>
+                        <li><a href="/sol_rtc"><span>Web RTC</span></a></li>
+                        <li><a href="/sol_ai"><span>AI System</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/data/1">자료실</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/data/1"><span>자료실</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/contact">고객센터</a>
+                    <ul class="gnb-2dep">
+                        <li><a href="/contact"><span>문의하기</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- //header -->
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="main-visual"></div>
+
+        <div class="container">
+            <div class="text-box">
+                <div class="text01">
+                    <h3>에이치디텔레콤<small>이 꿈꾸는시대</small></h3>
+                    <h2>그 이상을 뛰어넘는 가치</h2>
+                </div>
+                <p class="lead">
+                    hdtelecom is a global ICT company based on the Internet. <br>
+                    It is an information and communication company established in 2011.
+                </p>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="media-icon">
+                <a href="#" onclick="scrolling();">
+                    <img src="img/icon_media.png" alt="" class="img-fluid">
+                    <span>media player</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="container ripple-area d-none">
+            <div class="ripple-circle01">
+                <div class="intro-banner-vdo-play-btn pinkBg">
+                    <span class="rip_icon rip01"></span>
+                    <div class="rip-txt"><h5>글로벌 VoIP 서비스</h5></div>
+                    <span class="ripple pinkBg"></span>
+                    <span class="ripple pinkBg"></span>
+                    <span class="ripple pinkBg"></span>
+                    <!--<span class="stick-line" style="height: 200px;"></span>-->
+                </div>
+            </div>
+            <div class="ripple-circle02">
+                <div class="intro-banner-vdo-play-btn pinkBg">
+                    <span class="rip_icon rip02"></span>
+                    <div class="rip-txt"><h5>다양한 서비스</h5></div>
+
+                    <span class="ripple pinkBg"></span>
+                    <span class="ripple pinkBg"></span>
+                    <span class="ripple pinkBg"></span>
+                    <!--<span class="stick-line" style="height: 198px;"></span>-->
+                </div>
+            </div>
+            <div class="ripple-circle03">
+                <div class="intro-banner-vdo-play-btn pinkBg">
+                    <span class="rip_icon rip03"></span>
+                    <div class="rip-txt"><h5>영상회의서비스</h5></div>
+
+                    <span class="ripple pinkBg"></span>
+                    <span class="ripple pinkBg"></span>
+                    <span class="ripple pinkBg"></span>
+                    <!--<span class="stick-line" style="height: 198px;"></span>-->
+                </div>
+            </div>
+            <div class="ripple-circle04">
+                <div class="intro-banner-vdo-play-btn pinkBg">
+                    <span class="rip_icon rip04"></span>
+                    <div class="rip-txt"><h5>다양한 스마트기기</h5></div>
+
+                    <span class="ripple pinkBg"></span>
+                    <span class="ripple pinkBg"></span>
+                    <span class="ripple pinkBg"></span>
+                    <!--<span class="stick-line" style="height: 180px;"></span>-->
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-down">
+            <img src="img/mouse.png" alt="scroll down" class="img-fluid">
+            <span>SCROLL DOWN</span>
+        </div>
+    </div>
+
+    <div class="section icon-group">
+        <div class="container">
+            <h2 class="text-center mb4"><strong>HDTELECOM</strong>의 주요 서비스 및 제품</h2>
+
+            <ul class="clearfix">
+                <li class="">
+                    <a href="/pro_720homecctv">
+                        <div class="sp-icon01"></div>
+                        <p>720 CCTV</p>
+                        <span>글자글자글자</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <div class="sp-icon02"></div>
+                        <p>Wilfon B</p>
+                        <span>글자글자글자</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="/pro_disital_board">
+                        <div class="sp-icon03"></div>
+                        <p>Disital Board</p>
+                        <span>글자글자글자</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <div class="sp-icon04"></div>
+                        <p>Karaoke</p>
+                        <span>글자글자글자</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <div class="sp-icon05"></div>
+                        <p>App Store</p>
+                        <span>글자글자글자</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section position-relative">
+        <div class="container">
+            <h2 class="text-center mb4"><strong>HDTELECOM</strong> 홍보영상</h2>
+            <div class="video-group clearfix">
+                <div class="row no-gutters">
+                    <div class="tab-content left-video-box col-12 col-lg-11" id="nav-tabContent">
+                        <!--<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <video width="100%" height="100%" controls="controls" muted="muted" playsinline="playsinline" loop>
+                                <source src="https://hdt.willfonk.com/hdt/img/video/vdeo-kr.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>-->
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <video width="100%" height="100%" poster="img/video-thumb01.png" controls="controls" muted="muted" playsinline="playsinline" loop>
+                                <source src="https://hdt.willfonk.com/hdt/img/video/video-en.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <video width="100%" height="100%" poster="img/video-thumb02.png" controls="controls" muted="muted" playsinline="playsinline" loop>
+                                <source src="https://hdt.willfonk.com/hdt/img/video/video-jp.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                    </div>
+
+                    <script>
+                        document.getElementById('vid').play()
+                    </script>
+
+                    <nav class="right-tab col-12 col-lg-1">
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                            <!--<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                               role="tab" aria-controls="nav-home" aria-selected="true">
+                                <p>KR</p>
+                                <span>한국어<br>버전</span>
+                            </a>-->
+                            <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                               role="tab" aria-controls="nav-profile" aria-selected="false">
+                                <p>EN</p>
+                                <span>영어</span>
+                            </a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                               role="tab" aria-controls="nav-contact" aria-selected="false">
+                                <p>JP</p>
+                                <span>일본어</span>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="gray-back-bg position-absolute"></div>
+    </div>
+
+    <div class="section global-map">
+        <div class="container">
+            <h2 class="text-center"><strong>HDTELECOM</strong> Map</h2>
+
+            <div class="img-map">
+                <!-- ****************** left nation ********************** -->
+                <!-- Vancouver -->
+                <div class="nation-circle" style="top: 130px; left: 37px;">
+                    <div class="nation_flag">
+                        <img src="img/flag/nation_vancouver.png" alt="">
+                        <ul class="position-absolute tl">
+                            <li>Vancouver</li>
+                        </ul>
+                    </div>
+
+                    <!--<span class="dott"></span>
+                    <span class="map-ripple pinkBg"></span>
+                    <span class="map-ripple pinkBg"></span>
+                    <span class="map-ripple pinkBg"></span>-->
+                </div>
+
+                <!-- USA -->
+                <div class="nation-circle" style="top: 210px; left: 65px;">
+                    <div class="nation_flag">
+                        <img src="img/flag/nation_losangeles.png" alt="">
+                        <ul class="position-absolute tl" style="left: 20px; bottom: -77px; width: 90px;">
+                            <li class="pb-2">USA</li>
+                            <li>Los Angeles</li>
+                            <li>Newyork</li>
+                            <li>Hawaii</li>
+                            <li>Guam</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Brazil -->
+                <div class="nation-circle" style="top: 325px; left: 285px;">
+                    <div class="nation_flag">
+                        <img src="img/flag/nation_saopaulo.png" alt="">
+                        <ul class="position-absolute tl" style="left: 20px; bottom: -8px; width: 90px;">
+                            <li>Brazil</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Chile -->
+                <div class="nation-circle" style="top: 395px; left: 215px;">
+                    <div class="nation_flag">
+                        <img src="img/flag/nation_chile.png" alt="">
+                        <ul class="position-absolute tl" style="left: 20px; bottom: -8px; width: 90px;">
+                            <li>Chile</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Argentina -->
+                <div class="nation-circle" style="top: 455px; left: 265px;">
+                    <div class="nation_flag">
+                        <img src="img/flag/nation_argentina.png" alt="">
+                        <ul class="position-absolute tl" style="left: 20px; bottom: -8px; width: 90px;">
+                            <li>Argentina</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ****************** right nation ********************** -->
+                <!-- Korea -->
+                <div class="nation-circle" style="top: 145px; right: 135px;">
+                    <div class="nation_flag">
+                        <img src="img/flag/nation_korea.png" alt="">
+                        <ul class="position-absolute tl">
+                            <li>Korea</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Japan -->
+                <div class="nation-circle" style="top: 130px; right: 80px;">
+                    <div class="nation_flag">
+                        <img src="img/flag/nation_japan.png" alt="">
+                        <ul class="position-absolute tl">
+                            <li>Japan</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mongolia -->
+                <div class="nation-circle" style="top: 120px; right: 230px;">
+                    <div class="nation_flag">
+                        <img src="img/flag/nation_mongolia.png" alt="">
+                        <ul class="position-absolute tl">
+                            <li>Mongolia</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Hawaii -->
+                <!--<div class="nation-circle" style="top: 200px; right: -10px;">
+                    <div class="nation_flag">
+                        <img src="img/flag/nation_hawaii.png" alt="">
+                        <p class="position-absolute tl">Hawaii</p>
+                    </div>
+
+                    <span class="dott"></span>
+                    <span class="map-ripple pinkBg"></span>
+                    <span class="map-ripple pinkBg"></span>1
+                    <span class="map-ripple pinkBg"></span>
+                </div>-->
+
+                <!-- Hongkong -->
+                <div class="nation-circle" style="top: 217px; right: 170px;">
+                    <div class="nation_flag">
+                        <img src="img/flag/nation_hongkong.png" alt="">
+                        <ul class="position-absolute tr">
+                            <li>Hongkong</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Taiwan -->
+                <div class="nation-circle" style="top: 200px; right: 126px;">
+                    <div class="nation_flag">
+                        <img src="img/flag/nation_taiwan.png" alt="">
+                        <ul class="position-absolute tl">
+                            <li>Taiwan</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Philippine -->
+                <div class="nation-circle" style="top: 263px; right: 94px;">
+                    <div class="nation_flag">
+                        <img src="img/flag/nation_philippine.png" alt="">
+                        <ul class="position-absolute tl" style="left: 20px; bottom: -22px;">
+                            <li>Philippine</li>
+                            <li>Cebu</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Thailand / Cambodia / Vietnam -->
+                <div class="nation-circle clearfix" style="top: 247px; right: 228px;">
+                    <div class="nation_flag asia01 ">
+                        <img src="img/flag/nation_thailand.png" alt="">
+                        <img src="img/flag/nation_cambodia.png" alt="">
+                        <img src="img/flag/nation_vietnam.png" alt="">
+                        <ul class="position-absolute tl" style="bottom: -6px;">
+                            <li>Thailand</li>
+                            <li>Cambodia</li>
+                            <li>Vietnam</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Singapore / Indonesia / Malaysia -->
+                <div class="nation-circle clearfix" style="top: 327px; right: 120px;">
+                    <div class="nation_flag asia02">
+                        <img src="img/flag/nation_singapore.png" alt="">
+                        <img src="img/flag/nation_indonesia.png" alt="">
+                        <img src="img/flag/nation_malaysia.png" alt="">
+                        <ul class="position-absolute tl" style="bottom: -5px;">
+                            <li>Singapore</li>
+                            <li>Indonesia</li>
+                            <li>Malaysia</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bangladesh -->
+                <div class="nation-circle" style="top: 187px; right: 277px;">
+                    <div class="nation_flag">
+                        <img src="img/flag/nation_bangla.png" alt="">
+                        <ul class="position-absolute tl">
+                            <li>Bangladesh</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Dubai -->
+                <div class="nation-circle" style="top: 230px; right: 390px;">
+                    <div class="nation_flag">
+                        <img src="img/flag/nation_dubai.png" alt="">
+                        <ul class="position-absolute tl">
+                            <li>Dubai</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Paris -->
+                <div class="nation-circle" style="top: 110px; left: 480px;">
+                    <div class="nation_flag">
+                        <img src="img/flag/nation_france.png" alt="">
+                        <ul class="position-absolute tl">
+                            <li>Paris</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section main-inquiry">
+        <div class="container">
+            <h2 class="text-center mb4">온라인문의</h2>
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <ul class="main-inquiry-list">
+                        <li>
+                            <span class="info-tit">이름</span>
+                            <input type="text" class="" placeholder="">
+                        </li>
+                        <li>
+                            <span class="info-tit">이메일주소</span>
+                            <input type="email" class="" placeholder="">
+                        </li>
+                        <li>
+                            <span class="info-tit">연락처</span>
+                            <input type="text" class="" placeholder="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="right-form clearfix">
+                        <span class="info-tit d-block">제목</span>
+                        <select class="form-control">
+                            <option>유형1</option>
+                            <option>유형2</option>
+                            <option>유형3</option>
+                        </select>
+                        <input type="text" class="" placeholder="">
+                    </div>
+                    <div class="text-area">
+                        <span class="info-tit">내용</span>
+                        <textarea class=""  rows="5"></textarea>
+                    </div>
+                    <div class="inq-file">
+                        <span class="info-tit">파일</span>
+                        <div class="form-group-file clearfix">
+                            <input type="text" class="form-control" id="input-file" placeholder="file" disabled>
+                            <button type="button" class="btn btn-hdo">파일첨부</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="apply-btn clearfix">
+                        <button class="btn">신청하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-2">
+
+                </div>
+                <div class="col-12 col-md-10">
+                    <p class="">서울특별시 구로구 디지털로31길 41 이앤씨벤처드림타워6차 708호</p>
+                    <p>대표자: 이희대 | 사업자등록번호: 220-88-30372 | 전화: 070-7416-7890 | 팩스: 02-6008-8107 | help@hdtel.biz</p>
+                    <small>Copyright ⓒ hdtelecom Corp. All rights reserved.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a id="scroll-top-btn" href="#"></a>
+
+
+
+<!--script-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/nav.js"></script>
+<script type="text/javascript" src="js/mob.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
