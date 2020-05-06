@@ -44,7 +44,7 @@ public class AdminContactController {
     private String defaultImagePath;
 	@Autowired
 	ContactService contactService;
-	
+	//t
 	@RequestMapping(method = RequestMethod.GET, value = "/contact")
 	public String contact(Model model) {
 		return "contact";
@@ -53,22 +53,22 @@ public class AdminContactController {
 	@RequestMapping(method = RequestMethod.GET, value = "/admincontact/{page}")
 	public String data(@PathVariable Integer page, Model model, HttpServletRequest request, HttpServletResponse response, HttpSession session) {
 		
-        // ÆäÀÌÁö ¼³Á¤
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         Pageable pageable = null;
-        // ¸ñ·Ï
+        // ï¿½ï¿½ï¿½
         Page<ContactEntity> contactEntityList = null;
         
-        // ÆäÀÌÁö ¼³Á¤
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         pageable = PageRequest.of(page-1, 10, Sort.Direction.DESC, "CT_DATE");
-        // ¸ñ·Ï
+        // ï¿½ï¿½ï¿½
         contactEntityList = contactService.listContactRecent(pageable);
         if(!ObjectUtils.isEmpty(contactEntityList)) {
             HashMap<String, Object> contactResult = new HashMap<>();
-            // °Ô½ÃÆÇ Á¤º¸
+            // ï¿½Ô½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             contactResult.put("info", contactEntityList);
-            // ÀüÃ¼ ¼ö
+            // ï¿½ï¿½Ã¼ ï¿½ï¿½
             contactResult.put("total", contactEntityList.getTotalElements());
-            // ÇöÀç ÆäÀÌÁö
+            // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             contactResult.put("page", page);
 
 
@@ -117,14 +117,14 @@ public class AdminContactController {
 //	
 //	@RequestMapping(method = RequestMethod.POST, value = "/talent/update")
 //	public String adminNoticeUpdate(Model model, HttpServletRequest request, HttpServletResponse response, HttpSession session, TalentEntity talentEntity) {
-//		//»õ·Î¿î ÆÄÀÏÀÌ ¾Æ´Ò°æ¿ì
+//		//ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ´Ò°ï¿½ï¿½
 //		if(request.getParameter("newFileChk").equals("N")) {
 //			Optional<TalentEntity> talentDetail = talentService.detail(talentEntity.getTaCode());
 //			if(talentDetail.isPresent()) {
 //				talentEntity.setTaRoute(talentDetail.get().getTaRoute());
 //				talentEntity.setTaFilename(talentDetail.get().getTaFilename());
 //			}	
-//		} else {//»õ·Î¿îÆÄÀÏ
+//		} else {//ï¿½ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ï¿½ï¿½
 //			
 //		}
 //		
